@@ -10,7 +10,7 @@ Steps:
 
 6- make scripts executable
 
-5- Run either scripts:
+5- Run either script:
  - top_pods_by_cpu_uasge.sh
  - top_pods_by_memory_uasge.sh
 
