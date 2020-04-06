@@ -1,7 +1,6 @@
 #!/bin/bash
-# Get top 10 CPU demanding PODs
 echo "==================================="
-echo "===============CPU================="
+echo "=============Memory================"
 echo "==================================="
 echo "Please enter the total number of top processes between 1 and 100"
 read COUNT
