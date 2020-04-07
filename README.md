@@ -1,10 +1,10 @@
 # Steps:
 
-1- Download the sosreport
+1- Download a sosreport
 
-2- Extract the sosrport
+2- Extract it
 
-3- Change the working directory to sosreport directory
+3- Change the working directory to the extracted sosreport's directory
 
 4- Copy scripts to sosreport directory
 
@@ -15,3 +15,7 @@
  - top_pods_by_memory_uasge.sh
 
 6- Follow instructions
+
+
+Note:
+- These scripts are used with an OpenShift nodes, as they run multiple containers.
