@@ -16,6 +16,7 @@ done
 
 PID=(`sort -rnk6 sos_commands/process/ps_auxwww | awk '{print $2}'`)
 TOTALMEM=0
+PODS=$COUNT
 for i in ${PID[*]}
 do
         CRIO=`grep -s crio- -m1 proc/$i/mountinfo | cut -d "-" -f5 | cut -d"." -f1`
@@ -35,4 +36,4 @@ do
 	  COUNT=$((COUNT-1))
         fi
 done
-echo "Total MEM consumption of $PODS is $TOTALMEM GB"
+echo "Total MEM consumption of top $PODS PODs is $TOTALMEM GB"
