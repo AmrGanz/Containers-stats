@@ -35,4 +35,4 @@ do
 	  COUNT=$((COUNT-1))
         fi
 done
-echo "Total CPU consumption of top $PODS PODs is $TOTALCPU"
+echo "Total CPU consumption of top $PODS PODs is "$TOTALCPU"%"
