@@ -13,7 +13,8 @@ while :; do
 		break
 	fi
 done
-
+PODS=$COUNT
+TOTALCPU="0"
 PID=(`sort -rnk3 sos_commands/process/ps_auxwww | awk '{print $2}'`)
 
 for i in ${PID[*]}
@@ -27,8 +28,11 @@ do
           echo "Pod Name: $POD"
           NAMESPACE=`grep -s "pod.namespace\"" sos_commands/runc/runc_state_$CRIO | awk '{print $2}' | sed 's/"//g' | sed 's/,//g'`
           echo "namespace: $NAMESPACE"
-	  echo "CPU utilization: `grep $i sos_commands/process/ps_auxwww | awk '{print $3}'`%"
+	  CPU=`grep $i sos_commands/process/ps_auxwww | awk '{print $3}'`
+	  echo "CPU utilization: $CPU%"
+	  TOTALCPU=`echo "$TOTALCPU + $CPU" | bc`
 	  echo "==================================="
 	  COUNT=$((COUNT-1))
         fi
 done
+echo "Total CPU consumption of top $PODS PODs is $TOTALCPU"
