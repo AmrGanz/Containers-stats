@@ -19,4 +19,4 @@
 
 Note:
 - These scripts are used with an OpenShift nodes, as they run multiple containers.
-- This is still a work in progressand I will keep enhancing it
+- This is still a work in progress and I will keep enhancing it
