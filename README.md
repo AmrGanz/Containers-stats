@@ -1,5 +1,6 @@
-# This script will list all of the containers that were "running" on the node and show some info about them:
+# pods-info.sh
 
+**This script will list all of the containers that were "running" on the node and show some info about them:**
 - Container Name
 - Container PID
 - POD Name
