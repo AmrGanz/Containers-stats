@@ -1,7 +1,5 @@
 #!/bin/bash
 CONTAINERS=`cat sos_commands/crio/crictl_ps | awk '{print $1}' | grep -v CONTAINER`
-#for i in $CONTAINERS ; do CONT=`ls sos_commands/crio/ | grep $i | grep inspect` ; CONTAINERINFO+=(`cat sos_commands/crio/$CONT |  jq -r '.status.metadata.name, .pid, "io.kubernetes.pod.namespace", .status.labels."io.kubernetes.pod.name"'`); echo "${CONTAINERINFO[$i]}" ; done
-
 
 for i in $CONTAINERS ; do
 	CONT=`ls sos_commands/crio/ | grep $i | grep inspect`
