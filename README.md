@@ -1,3 +1,12 @@
+# This script will list all of the containers that were "running" on the node and show some info about them:
+
+- Container Name
+- Container PID
+- POD Name
+- Namespace
+- Container's CPU utilization
+- Container's MEM utilization
+
 # Steps:
 
 1- Download a sosreport
@@ -6,15 +15,11 @@
 
 3- Change the working directory to the extracted sosreport's directory
 
-4- Copy scripts to sosreport directory
+4- Copy script to sosreport directory
 
-6- make scripts executable
+6- make script executable
 
-5- Run either script:
- - top_pods_by_cpu_uasge.sh
- - top_pods_by_memory_uasge.sh
-
-6- Follow instructions
+5- Run the script
 
 
 Note:
