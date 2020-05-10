@@ -14,6 +14,6 @@ for i in $CONTAINERS ; do
 	echo "Pod Name: $PODNAME"
 	echo "Container name: $CONTNAME"
 	echo "Container PID: $CONTPID"
-	echo "CPU: $CPU"
-	echo "MEM: $MEM"
+	echo "CPU: $CPU %"
+	echo "MEM: $MEM %"
 done
