@@ -12,7 +12,7 @@ for i in $CONTAINERS ; do
 	echo "=============="
 	echo "Project Name: $NAMESPACE"
 	echo "Pod Name: $PODNAME"
-	echo "Container name $CONTNAME"
+	echo "Container name: $CONTNAME"
 	echo "Container PID: $CONTPID"
 	echo "CPU: $CPU"
 	echo "MEM: $MEM"
