@@ -14,7 +14,7 @@
 
 2- Extract it
 
-3- Change the working directory to the extracted sosreport's directory
+3- Switch to the extracted sosreport's directory
 
 4- Copy script to sosreport directory
 
