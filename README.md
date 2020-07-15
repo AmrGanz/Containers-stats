@@ -64,6 +64,6 @@ POD: b2ec4ea27e115 has no inspect file under sosreport-htxrtkg/sos_commands/crio
 POD: 859d8f73558d8 has no inspect file under sosreport-htxrtkg/sos_commands/crio/
 ~~~
 
-Note:
+Notes:
 - These scripts are used with an OpenShift nodes, as they run multiple containers.
 - This is still a work in progress and I will keep enhancing it
