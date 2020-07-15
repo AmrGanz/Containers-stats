@@ -26,7 +26,7 @@ drwx------. 14 amr amr     4096 Jul  2 09:22 sosreport-htxrtkg
 3- Download the script and make it executable
 ~~~
 # git clone https://github.com/AmrGanz/Containers-stats.git
-# chmod ./Containers-stats/pods-info.sh
+# chmod +x ./Containers-stats/pods-info.sh
 ~~~
 4- Run the script while pointing at the sosreport's directory
 ~~~
