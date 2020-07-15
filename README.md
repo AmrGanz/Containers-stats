@@ -1,6 +1,6 @@
 # Usage:
-- This script is inted to be used with sosreports generated from OpenShift nodes that are using CRIO as contianer runtime.
-- This script will list all of the containers that were "running" on the node and show some info about them:**
+- This script is intended to be used with sosreports generated from OpenShift nodes using CRIO.
+- This script will list all of the containers that were "running" on the node and show some info about them like:
   - Container Name
   - Container PID
   - POD Name
@@ -10,7 +10,7 @@
 
 # Steps:
 
-1- Download the sosreport
+1- Download/generate a sosreport
 ~~~
 # ls -l
 -rw-r--r--.  1 amr amr 32702552 Jul 15 11:32 sosreport-htxrtkg.tar.xz
@@ -30,7 +30,7 @@ drwx------. 14 amr amr     4096 Jul  2 09:22 sosreport-htxrtkg
 ~~~
 4- Run the script while pointing at the sosreport's directory
 ~~~
-# Containers-stats/pods-info.sh /path/to/sosreport/sosreport-htxrtkg
+# Containers-stats/pods-info.sh /path/to/sosreport/sosreport-htxrtkg/
 ~~~
 
 # Example output:
